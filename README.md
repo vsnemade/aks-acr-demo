@@ -1,2 +1,2 @@
-# aks-acr-demo
-This demo create simple Spring boot application that can be deployed to AKS and ACR.
+# azuretrafficmanager
+This is demo app that will use used by app service and azure traffic manager will be used for load balancing to App Service
