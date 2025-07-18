@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aks-acr-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aks-acr-deployment
+  template:
+    metadata:
+      labels:
+        app: aks-acr-deployment
+    spec:
+      containers:
+      - name: springboot-container
+        image: acrdemoregistryvish.azurecr.io/aks-acr-demo:1.0
+        ports:
+        - containerPort: 8080
